@@ -6,4 +6,6 @@ This is a python program to visualize a pcap file based on different levels like
 
 This is built using various python modules like: networkx,itertools,graphviz
 
+note: Currently this program efficiently working for pcap file size of less than 100kb. I will try to optimize it in future
+
 
