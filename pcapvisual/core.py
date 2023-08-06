@@ -25,10 +25,10 @@ class GraphManager(object):
 		self.args = args
 		self.data = {}
 		self.deeNS = {} # cache for reverse lookups
-		try:
-			self.geo_ip = maxminddb.open_database(self.args.geopath) # command line -G
-		except:
-			logging.warning("could not load GeoIP data from supplied parameter geopath %s" % self.args.geopath)
+		#try:
+			#self.geo_ip = maxminddb.open_database(self.args.geopath) # command line -G
+		#except:
+			#logging.warning("could not load GeoIP data from supplied parameter geopath %s" % self.args.geopath)
 
 		if self.layer == 2:
 			edges = map(self._layer_2_edge, packets)
