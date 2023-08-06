@@ -11,7 +11,6 @@ import logging
 
 import os
 import socket
-import maxminddb
 
 
 
